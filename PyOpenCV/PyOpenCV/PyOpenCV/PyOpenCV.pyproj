@@ -21,18 +21,24 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="fieIO.py">
+    <Compile Include="camTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassifyTree.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PyOpenCV.py" />
+    <Compile Include="regTrees.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\Barcode.bmp" />
     <Content Include="Data\digits.png" />
     <Content Include="Data\plot.png" />
+    <Content Include="Data\sine.txt" />
     <Content Include="Data\sudoku.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
